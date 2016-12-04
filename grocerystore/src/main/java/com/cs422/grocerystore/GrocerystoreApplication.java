@@ -1,12 +1,17 @@
 package com.cs422.grocerystore;
-
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GrocerystoreApplication {
+public class GrocerystoreApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GrocerystoreApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+
 	}
 }
