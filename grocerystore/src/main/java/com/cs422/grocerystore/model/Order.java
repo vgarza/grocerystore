@@ -1,8 +1,12 @@
 package com.cs422.grocerystore.model;
 
+import com.cs422.grocerystore.model.enums.OrderStatus;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -12,6 +16,9 @@ import java.util.List;
 @Entity
 public class Order {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private List<Product> products;
     private LocalDate timestamp;
     private OrderStatus orderStatus;

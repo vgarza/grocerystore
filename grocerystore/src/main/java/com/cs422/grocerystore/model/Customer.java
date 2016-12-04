@@ -3,6 +3,9 @@ package com.cs422.grocerystore.model;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.util.List;
 
 /**
@@ -10,6 +13,10 @@ import java.util.List;
  */
 @Entity
 public class Customer {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private Name name;
     private double balance;
     private List<Address> addresses;
@@ -20,6 +27,10 @@ public class Customer {
         this.balance = balance;
         this.addresses = addresses;
         this.creditCards = creditCards;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public Name getName() {

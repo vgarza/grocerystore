@@ -3,28 +3,24 @@ package com.cs422.grocerystore.model;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
-@Entity
 public class Warehouse {
 
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private Address address;
     private double storageCapacity;
 
     public Warehouse(Address address, double storageCapacity) {
         this.address = address;
         this.storageCapacity = storageCapacity;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public Address getAddress() {

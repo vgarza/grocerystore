@@ -2,25 +2,36 @@ package com.cs422.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
 /**
  * Created by alexanderlerma on 12/4/16.
  */
+@Entity
 public class Address {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String streetNumber;
     private String streetName;
     private String aptNumber;
     private String city;
-    private String zipcode;
     private String state;
+    private String zipcode;
 
-    public Address(String streetNumber, String streetName, String aptNumber, String city, String zipcode, String state) {
+
+    public Address(String streetNumber, String streetName, String aptNumber, String city, String state, String zipcode) {
         this.streetNumber = streetNumber;
         this.streetName = streetName;
         this.aptNumber = aptNumber;
         this.city = city;
-        this.zipcode = zipcode;
         this.state = state;
+        this.zipcode = zipcode;
     }
 
     public String getStreetNumber() {
