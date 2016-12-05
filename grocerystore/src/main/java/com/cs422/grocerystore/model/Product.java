@@ -2,10 +2,7 @@ package com.cs422.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +19,7 @@ public class Product {
     private String name;
     private double size;
     private String category;
+    @OneToMany
     private Map<String, String> moreInfo;
 
     public Product(String name, double size, String category, Map<String, String> moreInfo) {

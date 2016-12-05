@@ -2,16 +2,14 @@ package com.cs422.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
 @Entity
+@Table(name = "address")
 public class Address {
 
     @Id

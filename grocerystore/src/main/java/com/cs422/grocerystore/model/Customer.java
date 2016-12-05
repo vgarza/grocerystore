@@ -2,16 +2,14 @@ package com.cs422.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
 @Entity
+@Table(name ="customer")
 public class Customer {
 
     @Id
@@ -19,7 +17,13 @@ public class Customer {
     private long id;
     private Name name;
     private double balance;
+
+    @ManyToMany
+    @JoinColumn(name="addressId")
     private List<Address> addresses;
+
+    @OneToMany
+    @JoinColumn(name="cardId")
     private List<CreditCard> creditCards;
 
     public Customer(Name name, double balance, List<Address> addresses, List<CreditCard> creditCards) {

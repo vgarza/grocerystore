@@ -3,10 +3,18 @@ package com.cs422.grocerystore.model;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
+import javax.persistence.*;
+
 /**
  * Created by alexanderlerma on 12/4/16.
  */
+@Entity
+@Table(name = "creditcard")
 public class CreditCard {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     @CreditCardNumber
     private String cardNumber;
     private String expirationDate;
