@@ -2,74 +2,110 @@ package com.cs425.grocerystore.model;
 
 import com.cs425.grocerystore.model.enums.OrderStatus;
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.time.LocalDate;
-import java.util.List;
+import java.sql.Timestamp;
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
-@Entity
 public class Order {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    private List<Product> products;
-    private LocalDate timestamp;
-    private OrderStatus orderStatus;
-    private CreditCard creditCard;
+    private int orderId;
+    private OrderStatus status;
+    private Timestamp dateIssued;
+    private String cardNumber;
+    private String streetName;
+    private int streetNumber;
+    private String aptNumber;
+    private int zipcode;
 
-    public Order(List<Product> products, LocalDate timestamp, OrderStatus orderStatus, CreditCard creditCard) {
-        this.products = products;
-        this.timestamp = timestamp;
-        this.orderStatus = orderStatus;
-        this.creditCard = creditCard;
+    public Order(int orderId, OrderStatus status, Timestamp dateIssued, String cardNumber, String streetName, int streetNumber, String aptNumber, int zipcode) {
+        this.orderId = orderId;
+        this.status = status;
+        this.dateIssued = dateIssued;
+        this.cardNumber = cardNumber;
+        this.streetName = streetName;
+        this.streetNumber = streetNumber;
+        this.aptNumber = aptNumber;
+        this.zipcode = zipcode;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public int getOrderId() {
+        return orderId;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
-    public LocalDate getTimestamp() {
-        return timestamp;
+    public OrderStatus getStatus() {
+        return status;
     }
 
-    public void setTimestamp(LocalDate timestamp) {
-        this.timestamp = timestamp;
+    public void setStatus(OrderStatus status) {
+        this.status = status;
     }
 
-    public OrderStatus getOrderStatus() {
-        return orderStatus;
+    public Timestamp getDateIssued() {
+        return dateIssued;
     }
 
-    public void setOrderStatus(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
+    public void setDateIssued(Timestamp dateIssued) {
+        this.dateIssued = dateIssued;
     }
 
-    public CreditCard getCreditCard() {
-        return creditCard;
+    public String getCardNumber() {
+        return cardNumber;
     }
 
-    public void setCreditCard(CreditCard creditCard) {
-        this.creditCard = creditCard;
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
+    public String getStreetName() {
+        return streetName;
+    }
+
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
+
+    public int getStreetNumber() {
+        return streetNumber;
+    }
+
+    public void setStreetNumber(int streetNumber) {
+        this.streetNumber = streetNumber;
+    }
+
+    public String getAptNumber() {
+        return aptNumber;
+    }
+
+    public void setAptNumber(String aptNumber) {
+        this.aptNumber = aptNumber;
+    }
+
+    public int getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(int zipcode) {
+        this.zipcode = zipcode;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("products", products)
-                .append("timestamp", timestamp)
-                .append("orderStatus", orderStatus)
-                .append("creditCard", creditCard)
+                .append("orderId", orderId)
+                .append("status", status)
+                .append("dateIssued", dateIssued)
+                .append("cardNumber", cardNumber)
+                .append("streetName", streetName)
+                .append("streetNumber", streetNumber)
+                .append("aptNumber", aptNumber)
+                .append("zipcode", zipcode)
                 .toString();
     }
 }

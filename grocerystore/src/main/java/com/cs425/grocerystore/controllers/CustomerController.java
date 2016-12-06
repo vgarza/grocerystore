@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * Created by alexanderlerma on 12/4/16.
  *
- *
- *
- *
+ * Search and browse products,
+ * put products into a shopping cart,
+ * place an order
+ * Add/Delete/Modify a credit cards and addressesg
  *
  */
 @Controller

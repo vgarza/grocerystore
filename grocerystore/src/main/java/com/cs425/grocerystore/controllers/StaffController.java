@@ -1,6 +1,6 @@
 package com.cs425.grocerystore.controllers;
 
-import com.cs425.grocerystore.model.Customer;
+import com.cs425.grocerystore.model.Staff;
 import com.cs425.grocerystore.service.GroceryStoreService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,12 +30,12 @@ public class StaffController {
 
     @GetMapping("/form")
     public String staffForm(Model model) {
-        model.addAttribute("customer", new Customer());
-        return "customer";
+        model.addAttribute("staff", new Staff());
+        return "staff";
     }
 
     @PostMapping("/form")
-    public String staffSubmit(@ModelAttribute Customer customer) {
+    public String staffSubmit(@ModelAttribute Staff staff) {
         return "result";
     }
 }

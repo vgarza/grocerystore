@@ -1,136 +1,119 @@
-create table product(
-  name    varchar(20), not null
-  size    numeric(3,2), not null
-  category    varchar(20), not null
-  more_info   varchar(20),
-  primary key (name)
-); 
-
-create table order(
-  order_id    int, not null
-  status    varchar(8), not null
-  date_issued   date,
-  card_number   int, not null
-  st_name   varchar(20), not null
-  st_number int, not null
-  apt_number    varchar(10) 
-  zipcode   numeric(5,0), not null
-  primary key (order_ID),
-  foreign key(card_number) to credit_card,
-  foreign key(st_name) to credit_card,
-  foreign key(st_number) to credit_card,
-  foreign key(apt_number) to credit_card,
-  foreign key(zipcode) to credit_card,
-  check(status in ('issued', 'send', 'received'))
+CREATE TABLE product (
+  p_name      VARCHAR(20),
+  "size"    NUMERIC(3, 2) NOT NULL,
+  category  VARCHAR(20)   NOT NULL,
+  more_info VARCHAR(20),
+  PRIMARY KEY (p_name)
 );
 
-create table credit_card(
-  card_number   int, not null
-  sec_code    int, not null
-  exp_date    date,
-  st_name   varchar(20), not null
-  st_number int, not null
-  apt_number    varchar(10) 
-  city    varchar(20),
-  zipcode   numeric(5,0), not null
-  state   char(2),
-  first_name    varchar(20), not null
-  mid_initial     char(1)
-  last_name   varchar(20), not null
-  primary key(card_number, st_number, st_name, apt_number, zipcode)
-  foreign key(first_name) to customer,
-  foreign key(mid_initial) to customer,
-  foreign key(last_name) to customer
+CREATE TABLE customer (
+  balance     NUMERIC(5, 2),
+  first_name  VARCHAR(20) NOT NULL,
+  mid_initial CHAR(1),
+  last_name   VARCHAR(20) NOT NULL,
+  PRIMARY KEY (first_name, mid_initial, last_name)
 );
 
-create table customer(
-  balance   numeric(5,2)
-  first_name    varchar(20), not null
-  mid_initial     char(1)
-  last_name   varchar(20), not null
-  primary key(first_name, mid_initial, last_name)
+CREATE TABLE address (
+  st_number  INT           NOT NULL,
+  st_name    VARCHAR(20)   NOT NULL,
+  apt_number VARCHAR(10),
+  city       VARCHAR(20),
+  state      CHAR(2),
+  zipcode    NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (st_number, st_name, apt_number, zipcode)
 );
 
-create table address(
-  st_number   int,not null
-  st_name   varchar(20), not null
-  apt_number    varchar(10)
-  city    varchar(20),
-  zipcode   numeric(5,0), not null
-  state   char(2), 
-  primary key(st_number, st_name, apt_number, zipcode)
+CREATE TABLE credit_card (
+  card_number CHAR(16)           NOT NULL,
+  sec_code    INT           NOT NULL,
+  exp_date    DATE,
+  st_name     VARCHAR(20)   NOT NULL,
+  st_number   INT           NOT NULL,
+  apt_number  VARCHAR(10),
+  city        VARCHAR(20),
+  zipcode     NUMERIC(5, 0) NOT NULL,
+  state       CHAR(2),
+  first_name  VARCHAR(20)   NOT NULL,
+  mid_initial CHAR(1),
+  last_name   VARCHAR(20)   NOT NULL,
+  PRIMARY KEY (card_number, st_number, st_name, apt_number, zipcode),
+  FOREIGN KEY (first_name, mid_initial, last_name) REFERENCES customer
 );
 
-create table staff(
-  first_name    varchar(20), not null
-  mid_initial     char(1)
-  last_name   varchar(20), not null
-  salary    numeric(6,2)
-  job_title   varchar(20), not null
-  st_number   int, not null
-  st_name   varchar(20), not null
-  apt_number    varchar(10)
-  zipcode   numeric(5,0), not null
-  primary key(first_name, mid_initial, last_name),
-  foreign key(st_number) to address,
-  foreign key(st_name) to address, 
-  foreign key (apt_number) to address,
-  foreign key (zipcode) to address
+CREATE TABLE "order" (
+  order_id    INT           NOT NULL,
+  status      VARCHAR(16)    NOT NULL,
+  date_issued DATE,
+  card_number char(16)   NOT NULL,
+  st_name     VARCHAR(20)   NOT NULL,
+  st_number   INT           NOT NULL,
+  apt_number  VARCHAR(10),
+  zipcode     NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (order_id),
+  FOREIGN KEY (card_number, st_number, st_name, apt_number, zipcode) REFERENCES credit_card,
+  CHECK (status IN ('issued', 'send', 'received'))
 );
 
-create table pricing(
-  state   char(2), not null
-  price   numeric(3, 2), not null
-  name    varchar(20), not null
-  primary key(name, state),
-  foreign key(name) references product
+CREATE TABLE staff (
+  first_name  VARCHAR(20)   NOT NULL,
+  mid_initial CHAR(1),
+  last_name   VARCHAR(20)   NOT NULL,
+  salary      NUMERIC(6, 2),
+  job_title   VARCHAR(20)   NOT NULL,
+  st_number   INT           NOT NULL,
+  st_name     VARCHAR(20)   NOT NULL,
+  apt_number  VARCHAR(10),
+  zipcode     NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (first_name, mid_initial, last_name),
+  FOREIGN KEY (st_number, st_name, apt_number, zipcode) REFERENCES address
 );
 
-create table warehouse(
-  storage_capacity  numeric(6,2), not null
-  st_number   int,not null
-  st_name   varchar(20), not null
-  apt_number    varchar(10)
-  zipcode   numeric(5,0), not null
-  primary key(st_number, st_name, apt_number, zipcode),
-  foreign key(st_number) to address,
-  foreign key(st_name) to address, 
-  foreign key (apt_number) to address,
-  foreign key (zipcode) to address
+CREATE TABLE pricing (
+  state CHAR(2)       NOT NULL,
+  price NUMERIC(3, 2) NOT NULL,
+  p_name  VARCHAR(20)   NOT NULL,
+  PRIMARY KEY (p_name, state),
+  FOREIGN KEY (p_name) REFERENCES product
 );
 
-create table stock(
-  quantity    int, not null
-  name    varchar(20), not null
-  st_number   int,not null
-  st_name   varchar(20), not null
-  apt_number    varchar(10)
-  zipcode   numeric(5,0), not null
-  primary key(name, st_number, st_name, apt_number, zipcode),
-  foreign key(name) to product,
-  foreign key(st_number) to address,
-  foreign key(st_name) to address, 
-  foreign key (apt_number) to address,
-  foreign key (zipcode) to address)
+CREATE TABLE warehouse (
+  storage_capacity NUMERIC(6, 2) NOT NULL,
+  st_number        INT           NOT NULL,
+  st_name          VARCHAR(20)   NOT NULL,
+  apt_number       VARCHAR(10),
+  zipcode          NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (st_number, st_name, apt_number, zipcode),
+  FOREIGN KEY (st_number, st_name, apt_number, zipcode) REFERENCES address
 );
 
-create table customer_address(
-  first_name    varchar(20), not null
-  mid_initial     char(1)
-  last_name   varchar(20), not null
-  st_number   int,not null
-  st_name   varchar(20), not null
-  apt_number    varchar(10)
-  zipcode   numeric(5,0), not null
-  primary key(first_name, mid_initial, last_name, st_number, st_name, apt_number, zipcode),
-  foreign key(first_name) to customer,
-  foreign key(mid_initial) to customer, 
-  foreign key(last_name) to customer,
-  foreign key(st_number)to address,
-  foreign key(st_name)to address,
-  foreign key(apt_number)to address,
-  foreign key(zipcode)to address
+CREATE TABLE stock (
+  quantity   INT           NOT NULL,
+  p_name      VARCHAR(20)   NOT NULL,
+  st_number  INT           NOT NULL,
+  st_name    VARCHAR(20)   NOT NULL,
+  apt_number VARCHAR(10),
+  zipcode    NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (p_name, st_number, st_name, apt_number, zipcode),
+  FOREIGN KEY (p_name) REFERENCES product,
+  FOREIGN KEY (st_number, st_name, apt_number, zipcode) REFERENCES address
 );
+
+CREATE TABLE customer_address (
+  first_name  VARCHAR(20)   NOT NULL,
+  mid_initial CHAR(1),
+  last_name   VARCHAR(20)   NOT NULL,
+  st_number   INT           NOT NULL,
+  st_name     VARCHAR(20)   NOT NULL,
+  apt_number  VARCHAR(10),
+  zipcode     NUMERIC(5, 0) NOT NULL,
+  PRIMARY KEY (first_name, mid_initial, last_name, st_number, st_name, apt_number, zipcode),
+  FOREIGN KEY (first_name, mid_initial, last_name) REFERENCES customer,
+  FOREIGN KEY (st_number, st_name, apt_number, zipcode) REFERENCES address
+);
+
+
+
 
 
 

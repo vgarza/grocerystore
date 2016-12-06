@@ -9,6 +9,5 @@ import java.util.List;
  */
 public interface GroceryStoreService {
     Customer createCustomer(Customer customer);
-
     List<Customer> findAllCustomers();
 }

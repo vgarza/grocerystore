@@ -2,50 +2,26 @@ package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.*;
 import java.util.List;
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
-@Entity
-@Table(name = "customer")
+
 public class Customer {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    private Name name;
     private double balance;
+    private String firstName;
+    private char middleInitial;
+    private String lastName;
 
-    @ManyToMany
-    @JoinColumn(name = "addressId")
-    private List<Address> addresses;
+    public Customer() {}
 
-    @OneToMany
-    @JoinColumn(name = "cardId")
-    private List<CreditCard> creditCards;
-
-    public Customer() {
-    }
-
-    public Customer(Name name, double balance, List<Address> addresses, List<CreditCard> creditCards) {
-        this.name = name;
+    public Customer(double balance, String firstName, char middleInitial, String lastName) {
         this.balance = balance;
-        this.addresses = addresses;
-        this.creditCards = creditCards;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public Name getName() {
-        return name;
-    }
-
-    public void setName(Name name) {
-        this.name = name;
+        this.firstName = firstName;
+        this.middleInitial = middleInitial;
+        this.lastName = lastName;
     }
 
     public double getBalance() {
@@ -56,29 +32,37 @@ public class Customer {
         this.balance = balance;
     }
 
-    public List<Address> getAddresses() {
-        return addresses;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setAddresses(List<Address> addresses) {
-        this.addresses = addresses;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public List<CreditCard> getCreditCards() {
-        return creditCards;
+    public char getMiddleInitial() {
+        return middleInitial;
     }
 
-    public void setCreditCards(List<CreditCard> creditCards) {
-        this.creditCards = creditCards;
+    public void setMiddleInitial(char middleInitial) {
+        this.middleInitial = middleInitial;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("name", name)
                 .append("balance", balance)
-                .append("addresses", addresses)
-                .append("creditCards", creditCards)
+                .append("firstName", firstName)
+                .append("middleInitial", middleInitial)
+                .append("lastName", lastName)
                 .toString();
     }
 }

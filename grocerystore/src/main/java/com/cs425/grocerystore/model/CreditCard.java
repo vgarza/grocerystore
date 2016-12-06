@@ -1,31 +1,43 @@
 package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.hibernate.validator.constraints.CreditCardNumber;
-
-import javax.persistence.*;
 
 /**
  * Created by alexanderlerma on 12/4/16.
  */
-@Entity
-@Table(name = "creditcard")
+
 public class CreditCard {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    @CreditCardNumber
     private String cardNumber;
-    private String expirationDate;
     private String secCode;
-    private Address address;
+    private String expirationDate;
+    private String streetName;
+    private int streetNumber;
+    private String aptNumber;
+    private String city;
+    private int zipcode;
+    private String state;
+    private String firstName;
+    private char middleInitial;
+    private String lastName;
 
-    public CreditCard(String cardNumber, String expirationDate, String secCode, Address address) {
+    public CreditCard() {}
+
+    public CreditCard(String cardNumber, String secCode, String expirationDate,
+                      String streetName, int streetNumber, String aptNumber, String city,
+                      int zipcode, String state, String firstName, char middleInitial, String lastName) {
         this.cardNumber = cardNumber;
-        this.expirationDate = expirationDate;
         this.secCode = secCode;
-        this.address = address;
+        this.expirationDate = expirationDate;
+        this.streetName = streetName;
+        this.streetNumber = streetNumber;
+        this.aptNumber = aptNumber;
+        this.city = city;
+        this.zipcode = zipcode;
+        this.state = state;
+        this.firstName = firstName;
+        this.middleInitial = middleInitial;
+        this.lastName = lastName;
     }
 
     public String getCardNumber() {
@@ -52,12 +64,76 @@ public class CreditCard {
         this.secCode = secCode;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getStreetName() {
+        return streetName;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
+
+    public int getStreetNumber() {
+        return streetNumber;
+    }
+
+    public void setStreetNumber(int streetNumber) {
+        this.streetNumber = streetNumber;
+    }
+
+    public String getAptNumber() {
+        return aptNumber;
+    }
+
+    public void setAptNumber(String aptNumber) {
+        this.aptNumber = aptNumber;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public int getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(int zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public char getMiddleInitial() {
+        return middleInitial;
+    }
+
+    public void setMiddleInitial(char middleInitial) {
+        this.middleInitial = middleInitial;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
@@ -66,6 +142,15 @@ public class CreditCard {
                 .append("cardNumber", cardNumber)
                 .append("expirationDate", expirationDate)
                 .append("secCode", secCode)
+                .append("streetName", streetName)
+                .append("streetNumber", streetNumber)
+                .append("aptNumber", aptNumber)
+                .append("city", city)
+                .append("zipcode", zipcode)
+                .append("state", state)
+                .append("firstName", firstName)
+                .append("middleInitial", middleInitial)
+                .append("lastName", lastName)
                 .toString();
     }
 }

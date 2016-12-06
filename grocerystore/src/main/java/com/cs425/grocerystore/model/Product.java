@@ -2,39 +2,32 @@ package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.*;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by alexanderlerma on 12/4/16.
  */
 
-@Entity
 public class Product {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
-    private String name;
+    private String pName;
     private double size;
     private String category;
-    @OneToMany
-    private Map<String, String> moreInfo;
+    private String moreInfo;
 
-    public Product(String name, double size, String category, Map<String, String> moreInfo) {
-        this.name = name;
+    public Product() {}
+
+    public Product(String pName, double size, String category, String moreInfo) {
+        this.pName = pName;
         this.size = size;
         this.category = category;
         this.moreInfo = moreInfo;
     }
 
-    public String getName() {
-        return name;
+    public String getpName() {
+        return pName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setpName(String pName) {
+        this.pName = pName;
     }
 
     public double getSize() {
@@ -53,18 +46,18 @@ public class Product {
         this.category = category;
     }
 
-    public Map<String, String> getMoreInfo() {
-        return new HashMap<>(moreInfo);
+    public String getMoreInfo() {
+        return moreInfo;
     }
 
-    public void setMoreInfo(Map<String, String> moreInfo) {
+    public void setMoreInfo(String moreInfo) {
         this.moreInfo = moreInfo;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this)
-                .append("name", name)
+                .append("pName", pName)
                 .append("size", size)
                 .append("category", category)
                 .append("moreInfo", moreInfo)

@@ -2,28 +2,42 @@ package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-
 /**
- * Created by alexanderlerma on 12/4/16.
+ * Created by alexanderlerma on 12/6/16.
  */
-public class Address {
+public class Stock {
 
+    private int quantity;
+    private String name;
     private int streetNumber;
     private String streetName;
     private String aptNumber;
-    private String city;
-    private String state;
     private int zipcode;
 
-    public Address() {}
 
-    public Address(int streetNumber, String streetName, String aptNumber, String city, String state, int zipcode) {
+    public Stock(int quantity, String name, int streetNumber, String streetName, String aptNumber, int zipcode) {
+        this.quantity = quantity;
+        this.name = name;
         this.streetNumber = streetNumber;
         this.streetName = streetName;
         this.aptNumber = aptNumber;
-        this.city = city;
-        this.state = state;
         this.zipcode = zipcode;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getStreetNumber() {
@@ -50,22 +64,6 @@ public class Address {
         this.aptNumber = aptNumber;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
     public int getZipcode() {
         return zipcode;
     }
@@ -77,12 +75,11 @@ public class Address {
     @Override
     public String toString() {
         return new ToStringBuilder(this)
+                .append("quantity", quantity)
+                .append("name", name)
                 .append("streetNumber", streetNumber)
                 .append("streetName", streetName)
                 .append("aptNumber", aptNumber)
-                .append("city", city)
-                .append("state", state)
-                .append("zipcode", zipcode)
                 .toString();
     }
 }
