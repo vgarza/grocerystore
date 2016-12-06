@@ -1,4 +1,4 @@
-package com.cs422.grocerystore.model;
+package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * Created by alexanderlerma on 12/4/16.
  */
 @Entity
-@Table(name ="customer")
+@Table(name = "customer")
 public class Customer {
 
     @Id
@@ -19,12 +19,15 @@ public class Customer {
     private double balance;
 
     @ManyToMany
-    @JoinColumn(name="addressId")
+    @JoinColumn(name = "addressId")
     private List<Address> addresses;
 
     @OneToMany
-    @JoinColumn(name="cardId")
+    @JoinColumn(name = "cardId")
     private List<CreditCard> creditCards;
+
+    public Customer() {
+    }
 
     public Customer(Name name, double balance, List<Address> addresses, List<CreditCard> creditCards) {
         this.name = name;

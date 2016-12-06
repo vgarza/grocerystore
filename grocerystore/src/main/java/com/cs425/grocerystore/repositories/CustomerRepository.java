@@ -1,6 +1,6 @@
-package com.cs422.grocerystore.repositories;
+package com.cs425.grocerystore.repositories;
 
-import com.cs422.grocerystore.model.Customer;
+import com.cs425.grocerystore.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

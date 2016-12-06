@@ -1,4 +1,4 @@
-package com.cs422.grocerystore.model;
+package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
@@ -17,13 +17,13 @@ public class Address {
     private long id;
     private String streetNumber;
     private String streetName;
-    private String aptNumber;
+    private int aptNumber;
     private String city;
     private String state;
     private String zipcode;
 
 
-    public Address(String streetNumber, String streetName, String aptNumber, String city, String state, String zipcode) {
+    public Address(String streetNumber, String streetName, int aptNumber, String city, String state, String zipcode) {
         this.streetNumber = streetNumber;
         this.streetName = streetName;
         this.aptNumber = aptNumber;
@@ -48,11 +48,11 @@ public class Address {
         this.streetName = streetName;
     }
 
-    public String getAptNumber() {
+    public int getAptNumber() {
         return aptNumber;
     }
 
-    public void setAptNumber(String aptNumber) {
+    public void setAptNumber(int aptNumber) {
         this.aptNumber = aptNumber;
     }
 

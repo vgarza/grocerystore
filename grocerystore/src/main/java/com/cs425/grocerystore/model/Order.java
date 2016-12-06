@@ -1,6 +1,6 @@
-package com.cs422.grocerystore.model;
+package com.cs425.grocerystore.model;
 
-import com.cs422.grocerystore.model.enums.OrderStatus;
+import com.cs425.grocerystore.model.enums.OrderStatus;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Entity;

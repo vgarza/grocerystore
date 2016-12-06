@@ -1,4 +1,4 @@
-package com.cs422.grocerystore.model;
+package com.cs425.grocerystore.model;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 

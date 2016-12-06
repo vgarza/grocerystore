@@ -1,4 +1,4 @@
-package com.cs422.grocerystore.model.enums;
+package com.cs425.grocerystore.model.enums;
 
 import com.google.gson.annotations.SerializedName;
 
