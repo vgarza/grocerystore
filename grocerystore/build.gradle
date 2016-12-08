@@ -37,6 +37,7 @@ dependencies {
     compile 'org.webjars:bootstrap:4.0.0-alpha.5'
     compile 'org.apache.commons:commons-lang3:3.4'
     compile 'com.google.code.gson:gson:2.8.+'
+    compile 'com.h2database:h2'
     testCompile 'junit:junit'
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }

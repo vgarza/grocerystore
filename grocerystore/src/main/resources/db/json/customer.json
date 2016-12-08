@@ -1,0 +1,14 @@
+{
+  "customers" : [
+    {"balance" : 1234.00, "firstName" : "Jane", "middleInitial" : "A", "lastName" : "Doe"},
+    {"balance" : 4321.00, "firstName" : "Phil", "middleInitial" : "B", "lastName" : "Smith"},
+    {"balance" : 4444.00, "firstName" : "Bob", "middleInitial" : "C", "lastName" : "Doe"},
+    {"balance" : 1111.00, "firstName" : "Alice", "middleInitial" : "D", "lastName" : "Doe"},
+    {"balance" : 3399.33, "firstName" : "Michael", "middleInitial" : "G", "lastName" : "Scott"},
+    {"balance" : 4234.44, "firstName" : "Dwight", "middleInitial" : "K", "lastName" : "Schrute"},
+    {"balance" : 7732.00, "firstName" : "Pam", "middleInitial" : "P", "lastName" : "Beesly"},
+    {"balance" : 3333.03, "firstName" : "Oscar", "middleInitial" : "J", "lastName" : "Martinez"},
+    {"balance" : 5555.01, "firstName" : "Angela", "middleInitial" : "A", "lastName" : "Jones"},
+    {"balance" : 1010.10, "firstName" : "Jane", "middleInitial" : "J", "lastName" : "Ellen"},
+  ]
+}
