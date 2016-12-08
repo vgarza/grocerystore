@@ -1,2 +1,2 @@
-Name		Email		    StudentID
-Alexander Lerma alerma@hawk.iit.edu A20315236
+Name		Email
+Alexander Lerma alerma@hawk.iit.edu
