@@ -12,3 +12,277 @@
     {"balance" : 1010.10, "firstName" : "Jane", "middleInitial" : "J", "lastName" : "Ellen"},
   ]
 }
+
+{
+  "product" : [
+    {"pName" : "apple", "size" : 0.16, "category" : "food", "moreInfo" : "90 calories"},
+    {"pName" : "banana", "size" : 0.17, "category" : "food", "moreInfo" : "105 calories"},
+    {"pName" : "beef steak", "size" : 0.25, "category" : "food", "moreInfo" : "679 calories"},
+    {"pName" : "lettuce", "size" : 0.21, "category" : "food", "moreInfo" : "5 calories"},
+    {"pName" : "tequila", "size" : 0.20, "category" : "drink", "moreInfo" : "40% ABV"},
+    {"pName" : "black beans", "size" : 0.18, "category" : "food", "moreInfo" : "624 calories"},
+    {"pName" : "sprite", "size" : 0.19, "category" : "drink", "moreInfo" : "192 calories"},
+    {"pName" : "orange", "size" : 0.18, "category" : "food", "moreInfo" : "45 calories"},
+    {"pName" : "milk", "size" : 0.23, "category" : "drink", "moreInfo" : "824 calories"},
+    {"pName" : "budlight", "size" : 0.19, "category" : "drink", "moreInfo" : "4.2% ABV"},
+  ]
+}
+
+{
+  "address" : [
+    {"streetNumber" : 3333, "streetName" : "Wabash Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 110, "streetName" : "Inverness Dr.", "aptNumber" : "", "city" : "Naperville", "state" : "IL", "zipcode" : 60540},
+    {"streetNumber" : 1305, "streetName" : "Jewett St.", "aptNumber" : "", "city" : "Berwyn", "state" : "IL", "zipcode" : 60402},
+    {"streetNumber" : 4, "streetName" : "Lexington Lane", "aptNumber" : "2", "city" : "Plainfield", "state" : "IL", "zipcode" : 60544},
+    {"streetNumber" : 8501, "streetName" : "Butterfield St.", "aptNumber" : "1", "city" : "Bethesda", "state" : "MD", "zipcode" : 20814},
+    {"streetNumber" : 3, "streetName" : "Church Ave", "aptNumber" : "", "city" : "Champaign", "state" : "IL", "zipcode" : 61821},
+    {"streetNumber" : 20, "streetName" : "Old Ryan St.", "aptNumber" : "3", "city" : "Atlanta", "state" : "GA", "zipcode" : 30301},
+    {"streetNumber" : 355, "streetName" : "Third Dr.", "aptNumber" : "B", "city" : "Dundalk", "state" : "MD", "zipcode" : 21222},
+    {"streetNumber" : 107, "streetName" : "33rd St.", "aptNumber" : "1", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 3330, "streetName" : "Michigan Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 333, "streetName" : "Wab Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 10, "streetName" : "Invern Dr.", "aptNumber" : "", "city" : "Naperville", "state" : "IL", "zipcode" : 60540},
+    {"streetNumber" : 105, "streetName" : "Jetter St.", "aptNumber" : "", "city" : "Berwyn", "state" : "IL", "zipcode" : 60402},
+    {"streetNumber" : 45, "streetName" : "Lexing Lane", "aptNumber" : "2", "city" : "Plainfield", "state" : "IL", "zipcode" : 60544},
+    {"streetNumber" : 801, "streetName" : "Butter St.", "aptNumber" : "1", "city" : "Bethesda", "state" : "MD", "zipcode" : 20814},
+    {"streetNumber" : 35, "streetName" : "Churching Ave", "aptNumber" : "", "city" : "Champaign", "state" : "IL", "zipcode" : 61821},
+    {"streetNumber" : 07, "streetName" : "Old Run St.", "aptNumber" : "3", "city" : "Atlanta", "state" : "GA", "zipcode" : 30301},
+    {"streetNumber" : 35, "streetName" : "Thirdness Dr.", "aptNumber" : "B", "city" : "Dundalk", "state" : "MD", "zipcode" : 21222},
+    {"streetNumber" : 17, "streetName" : "35th St.", "aptNumber" : "1", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 330, "streetName" : "Mich Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "city" : "Bethesda", "state" : "MD", "zipcode" : 20814},
+    {"streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "city" : "Champaign", "state" : "IL", "zipcode" : 61821},
+    {"streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "city" : "Atlanta", "state" : "GA", "zipcode" : 30301},
+    {"streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "city" : "Dundalk", "state" : "MD", "zipcode" : 21222},
+    {"streetNumber" : 1207, "streetName" : "39rd St.", "aptNumber" : "1", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "city" : "Chicago", "state" : "IL", "zipcode" : 60616},
+    {"streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "city" : "Naperville", "state" : "IL", "zipcode" : 60540},
+    {"streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "city" : "Berwyn", "state" : "IL", "zipcode" : 60402},
+    {"streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "city" : "Plainfield", "state" : "IL", "zipcode" : 60544},
+  ]
+}
+
+{
+  "creditCard" : [
+    {"cardNumber" : "1234567891234567", "secCode" : "123", "expirationDate" : "02/2019", "streetName" : "First", "streetNumber" : 12, "aptNumber" : "A", "city" : "Chicago", "zipcode" : 60608, "state" : "IL", "firstName" : "Phil", "middleInitial" : "B", "lastName" : "Smith"},
+    {"cardNumber" : "5066448954854596", "secCode" : "321", "expirationDate" : "05/2020", "streetName" : "Second", "streetNumber" : 555, "aptNumber" : "B", "city" : "Elgin", "zipcode" : 60123, "state" : "IL", "firstName" : "Bob", "middleInitial" : "C", "lastName" : "Doe"},
+    {"cardNumber" : "8955887796215954", "secCode" : "456", "expirationDate" : "01/2017", "streetName" : "Avery", "streetNumber" : 524, "aptNumber" : "1", "city" : "Palatine", "zipcode" : 60067, "state" : "IL", "firstName" : "Alice", "middleInitial" : "D", "lastName" : "Doe"},
+    {"cardNumber" : "5588996658412023", "secCode" : "654", "expirationDate" : "05/2019", "streetName" : "Papermate", "streetNumber" : 85, "aptNumber" : "3", "city" : "Chicago", "zipcode" : 60616, "state" : "IL", "firstName" : "Michael", "middleInitial" : "G", "lastName" : "Scott"},
+    {"cardNumber" : "9658965741202558", "secCode" : "789", "expirationDate" : "01/2018", "streetName" : "Bic", "streetNumber" : 102, "aptNumber" : "3", "city" : "Elgin", "zipcode" : 60120, "state" : "IL", "firstName" : "Dwight", "middleInitial" : "K", "lastName" : "Schrute"},
+    {"cardNumber" : "9632587410258965", "secCode" : "987", "expirationDate" : "04/2020", "streetName" : "Staples", "streetNumber" : 2569, "aptNumber" : "2", "city" : "Berwyn", "zipcode" : 60402, "state" : "IL", "firstName" : "Pam", "middleInitial" : "P", "lastName" : "Beesly"},
+    {"cardNumber" : "1548962014598201", "secCode" : "963", "expirationDate" : "06/2022", "streetName" : "Frances", "streetNumber" : 25, "aptNumber" : "", "city" : "Streamwood", "zipcode" : 60107, "state" : "IL", "firstName" : "Oscar", "middleInitial" : "J", "lastName" : "Martinez"},
+    {"cardNumber" : "0000558547962881", "secCode" : "852", "expirationDate" : "11/2018", "streetName" : "Nickolodean", "streetNumber" : 32, "aptNumber" : "", "city" : "Barlett", "zipcode" : 60103, "state" : "IL", "firstName" : "Angela", "middleInitial" : "A", "lastName" : "Jones"},
+    {"cardNumber" : "9998855544771268", "secCode" : "741", "expirationDate" : "10/2019", "streetName" : "Disney", "streetNumber" : 100, "aptNumber" : "C", "city" : "Hanover Park", "zipcode" : 60133, "state" : "IL", "firstName" : "Jane", "middleInitial" : "J", "lastName" : "Ellen"},
+    {"cardNumber" : "1288596254985878", "secCode" : "025", "expirationDate" : "07/2021", "streetName" : "Furnace", "streetNumber" : 102, "aptNumber" : "1", "city" : "Chicago", "zipcode" : 60616, "state" : "IL", "firstName" : "Jane", "middleInitial" : "A", "lastName" : "Doe"},
+  
+  ]
+}
+
+{
+  "customerAddress" : [
+    {"firstName" : "Jane", "middleInitial" : "A", "lastName" : "Doe", "streetNumber" : 3333, "streetName" : "Wabash Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"firstName" : "Phil", "middleInitial" : "B", "lastName" : "Smith", "streetNumber" : 110, "streetName" : "Inverness Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"firstName" : "Bob", "middleInitial" : "C", "lastName" : "Doe", "streetNumber" : 1305, "streetName" : "Jewett St.", "aptNumber" : "", "zipcode" : 60402},
+    {"firstName" : "Alice", "middleInitial" : "D", "lastName" : "Doe", "streetNumber" : 4, "streetName" : "Lexington Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"firstName" : "Michael", "middleInitial" : "G", "lastName" : "Scott", "streetNumber" : 8501, "streetName" : "Butterfield St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"firstName" : "Dwight", "middleInitial" : "K", "lastName" : "Schrute", "streetNumber" : 3, "streetName" : "Church Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"firstName" : "Pam", "middleInitial" : "P", "lastName" : "Beesly", "streetNumber" : 20, "streetName" : "Old Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"firstName" : "Oscar", "middleInitial" : "J", "lastName" : "Martinez", "streetNumber" : 355, "streetName" : "Third Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    { "firstName" : "Angela", "middleInitial" : "A", "lastName" : "Jones", "streetNumber" : 107, "streetName" : "33rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"firstName" : "Jane", "middleInitial" : "J", "lastName" : "Ellen", "streetNumber" : 3330, "streetName" : "Michigan Ave.", "aptNumber" : "", "zipcode" : 60616},
+  ]
+}
+
+{
+  "order" : [
+    {"orderId" : 1, "status" : "issued", "dateIssued" : "12/1/16", "cardNumber" : "1234567891234567", "streetName" : "First", "streetNumber" : 12, "aptNumber" : "A", "zipcode" : 60608},
+    {"orderId" : 2, "status" : "issued", "dateIssued" : "12/1/16", "cardNumber" : "5066448954854596", "streetName" : "Second", "streetNumber" : 555, "aptNumber" : "B", "zipcode" : 60123},
+    {"orderId" : 3, "status" : "send", "dateIssued" : "12/2/16", "cardNumber" : "8955887796215954", "streetName" : "Avery", "streetNumber" : 524, "aptNumber" : "1", "zipcode" : 60067}, 
+    {"orderId" : 4, "status" : "send", "dateIssued" : "12/2/16", "cardNumber" : "5588996658412023", "streetName" : "Papermate", "streetNumber" : 85, "aptNumber" : "3", "zipcode" : 60616},  
+    {"orderId" : 5, "status" : "issued", "dateIssued" : "12/3/16", "cardNumber" : "9658965741202558", "streetName" : "Bic", "streetNumber" : 102, "aptNumber" : "3","zipcode" : 60120},
+    {"orderId" : 6, "status" : "send", "dateIssued" : "12/3/16", "cardNumber" : "9632587410258965", "streetName" : "Staples", "streetNumber" : 2569, "aptNumber" : "2","zipcode" : 60402},
+    {"orderId" : 7, "status" : "received", "dateIssued" : "12/4/16", "cardNumber" : "1548962014598201", "streetName" : "Frances", "streetNumber" : 25, "aptNumber" : "", "zipcode" : 60107}, 
+    {"orderId" : 8, "status" : "received", "dateIssued" : "12/5/16", "cardNumber" : "0000558547962881", "streetName" : "Nickolodean", "streetNumber" : 32, "aptNumber" : "", "zipcode" : 60103},
+    {"orderId" : 9, "status" : "issued", "dateIssued" : "12/6/16", "cardNumber" : "9998855544771268",  "streetName" : "Disney", "streetNumber" : 100, "aptNumber" : "C", "zipcode" : 60133}, 
+    {"orderId" : 10, "status" : "issued", "dateIssued" : "12/7/16", "cardNumber" : "1288596254985878", "streetName" : "Furnace", "streetNumber" : 102, "aptNumber" : "1", "zipcode" : 60616},
+  ]
+}
+
+{
+  "pricing" : [
+    {"name" : "apple", "price" : 0.50, "state" : "IL"},
+    {"name" : "apple", "price" : 0.60, "state" : "MD"},
+    {"name" : "apple", "price" : 0.60, "state" : "GA"},
+    {"name" : "banana", "price" : 0.60, "state" : "MD"},
+    {"name" : "banana", "price" : 0.50, "state" : "GA"},
+    {"name" : "banana", "price" : 0.40, "state" : "IL"},
+    {"name" : "beef steak", "price" : 5.05, "state" : "GA"},
+    {"name" : "beef steak", "price" : 5.50, "state" : "IL"},
+    {"name" : "beef steak", "price" : 6.00, "state" : "MD"},
+    {"name" : "lettuce", "price" : 1.20, "state" : "IL"},
+    {"name" : "lettuce", "price" : 1.20, "state" : "MD"},
+    {"name" : "lettuce", "price" : 1.20, "state" : "GA"},
+    {"name" : "tequila", "price" : 15.00, "state" : "IL"},
+    {"name" : "tequila", "price" : 20.00, "state" : "MD"},
+    {"name" : "tequila", "price" : 19.00, "state" : "GA"},
+    {"name" : "black beans","price" : 3.80, "state" : "IL"},
+    {"name" : "black beans","price" : 3.08, "state" : "MD"},
+    {"name" : "black beans","price" : 3.10, "state" : "GA"},
+    {"name" : "sprite", "price" : 1.75, "state" : "IL"},
+    {"name" : "sprite", "price" : 1.75, "state" : "MD"},
+    {"name" : "sprite", "price" : 1.75, "state" : "GA"},
+    {"name" : "orange", "price" : 0.40, "state" : "IL"},
+    {"name" : "orange", "price" : 0.45, "state" : "MD"},
+    {"name" : "orange", "price" : 0.80, "state" : "GA"},
+    {"name" : "milk", "price" : 3.34, "state" : "IL"},
+    {"name" : "milk", "price" : 2.44, "state" : "MD"}
+    {"name" : "milk", "price" : 2.34, "state" : "GA"}
+    {"name" : "budlight", "price" : 4.00, "state" : "IL"},
+    {"name" : "budlight", "price" : 5.00, "state" : "MD"},
+    {"name" : "budlight", "price" : 6.00, "state" : "GA"},
+  ]
+}
+
+{
+  "staff" : [
+    {"firstName" : "Jane", "middleInitial" : "A", "lastName" : "Doe", "salary" : 3500, "streetNumber" : 333, "streetName" : "Wab Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"firstName" : "John", "middleInitial" : "B", "lastName" : "Done", "salary" : 3500, "streetNumber" : 10, "streetName" : "Invern Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"firstName" : "Lane", "middleInitial" : "C", "lastName" : "Joe", "salary" : 4000, "streetNumber" : 105, "streetName" : "Jetter St.", "aptNumber" : "", "zipcode" : 60402},
+    {"firstName" : "Abe", "middleInitial" : "D", "lastName" : "Thomas", "salary" : 5500, "streetNumber" : 45, "streetName" : "Lexing Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"firstName" : "Bob", "middleInitial" : "E", "lastName" : "Smith", "salary" : 3500, "streetNumber" : 801, "streetName" : "Butter St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"firstName" : "Mike", "middleInitial" : "F", "lastName" : "Jones", "salary" : 6000, "streetNumber" : 35, "streetName" : "Churching Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"firstName" : "Nick", "middleInitial" : "G", "lastName" : "Sutherland", "salary" : 6500, "streetNumber" : 07, "streetName" : "Old Run St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"firstName" : "Louise", "middleInitial" : "H", "lastName" : "Homes", "salary" : 3500, "streetNumber" : 35, "streetName" : "Thirdness Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"firstName" : "Amber", "middleInitial" : "I", "lastName" : "Kushner", "salary" : 4500, "streetNumber" : 17, "streetName" : "35th St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"firstName" : "Tom", "middleInitial" : "J", "lastName" : "Plato", "salary" : 3500, "streetNumber" : 330, "streetName" : "Mich Ave.", "aptNumber" : "", "zipcode" : 60616},    
+  ]
+}
+
+{
+  "stock" : [       
+    {"quantity" : 500, "name" : "apple", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 200, "name" : "banana", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 250, "name" : "beef steak", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 102, "name" : "lettuce", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 500, "name" : "tequila", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 600, "name" : "black beans", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 400, "name" : "sprite", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 600, "name" : "orange", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 305, "name" : "milk", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"quantity" : 506, "name" : "budlight", "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},  
+    {"quantity" : 600, "name" : "apple", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 200, "name" : "banana", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 320, "name" : "beef steak", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 302, "name" : "lettuce", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 300, "name" : "tequila", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 300, "name" : "black beans", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 300, "name" : "sprite", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 300, "name" : "orange", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 305, "name" : "milk", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"quantity" : 306, "name" : "budlight", "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821}, 
+    {"quantity" : 700, "name" : "apple", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 600, "name" : "banana", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 650, "name" : "beef steak", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 602, "name" : "lettuce", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 600, "name" : "tequila", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 500, "name" : "black beans", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 900, "name" : "sprite", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 600, "name" : "orange", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 605, "name" : "milk", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"quantity" : 606, "name" : "budlight", "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},  
+    {"quantity" : 800, "name" : "apple", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 250, "name" : "banana", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 250, "name" : "beef steak", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 109, "name" : "lettuce", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 509, "name" : "tequila", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 609, "name" : "black beans", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 409, "name" : "sprite", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 609, "name" : "orange", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 309, "name" : "milk", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"quantity" : 509, "name" : "budlight", "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222}, 
+    {"quantity" : 909, "name" : "apple", "streetNumber" : 1207, "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 209, "name" : "banana", "streetNumber" : 1207, "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 258, "name" : "beef steak", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 108, "name" : "lettuce", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 508, "name" : "tequila", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 608, "name" : "black beans", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 408, "name" : "sprite", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 608, "name" : "orange", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 308, "name" : "milk", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"quantity" : 508, "name" : "budlight", "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616}, 
+    {"quantity" : 100, "name" : "apple", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 204, "name" : "banana", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 254, "name" : "beef steak", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 104, "name" : "lettuce", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 504, "name" : "tequila", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 604, "name" : "black beans", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 404, "name" : "sprite", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 604, "name" : "orange", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 304, "name" : "milk", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 504, "name" : "budlight", "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616}, 
+    {"quantity" : 200, "name" : "apple", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 201, "name" : "banana", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 251, "name" : "beef steak", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 101, "name" : "lettuce", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 501, "name" : "tequila", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 601, "name" : "black beans", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 401, "name" : "sprite", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 601, "name" : "orange", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 301, "name" : "milk", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"quantity" : 501, "name" : "budlight", "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616}, 
+    {"quantity" : 301, "name" : "apple", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 201, "name" : "banana", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 251, "name" : "beef steak", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 105, "name" : "lettuce", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 505, "name" : "tequila", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 605, "name" : "black beans", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 455, "name" : "sprite", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 605, "name" : "orange", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 305, "name" : "milk", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"quantity" : 505, "name" : "budlight", "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540}, 
+    {"quantity" : 405, "name" : "apple", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 205, "name" : "banana", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 258, "name" : "beef steak", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 104, "name" : "lettuce", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 501, "name" : "tequila", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 60, "name" : "black beans", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 40, "name" : "sprite", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 650, "name" : "orange", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 355, "name" : "milk", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"quantity" : 586, "name" : "budlight", "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402}, 
+    {"quantity" : 500, "name" : "apple", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 290, "name" : "banana", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 290, "name" : "beef steak", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 192, "name" : "lettuce", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 590, "name" : "tequila","streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 690, "name" : "black beans", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 490, "name" : "sprite", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 690, "name" : "orange", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 395, "name" : "milk", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+    {"quantity" : 596, "name" : "budlight", "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544}, 
+  ]
+}
+
+{
+  "warehouse" : [
+    {"storageCapacity" : 6500, "streetNumber" : 4501, "streetName" : "Field St.", "aptNumber" : "1", "zipcode" : 20814},
+    {"storageCapacity" : 6200, "streetNumber" : 35, "streetName" : "Childh Ave", "aptNumber" : "", "zipcode" : 61821},
+    {"storageCapacity" : 5000, "streetNumber" : 250, "streetName" : "Ryan St.", "aptNumber" : "3", "zipcode" : 30301},
+    {"storageCapacity" : 3000, "streetNumber" : 3525, "streetName" : "Bird Dr.", "aptNumber" : "B", "zipcode" : 21222},
+    {"storageCapacity" : 8500, "streetNumber" : 1207, "streetName" : "39rd St.", "aptNumber" : "1", "zipcode" : 60616},
+    {"storageCapacity" : 9500, "streetNumber" : 3230, "streetName" : "Mild Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"storageCapacity" : 7500, "streetNumber" : 3323, "streetName" : "Wabber Ave.", "aptNumber" : "", "zipcode" : 60616},
+    {"storageCapacity" : 6400, "streetNumber" : 120, "streetName" : "Inferno Dr.", "aptNumber" : "", "zipcode" : 60540},
+    {"storageCapacity" : 10500, "streetNumber" : 125, "streetName" : "Jets St.", "aptNumber" : "", "zipcode" : 60402},
+    {"storageCapacity" : 2500, "streetNumber" : 425, "streetName" : "Lexon Lane", "aptNumber" : "2", "zipcode" : 60544},
+  ]
+}
+
+
+
+
+
+
+
+
